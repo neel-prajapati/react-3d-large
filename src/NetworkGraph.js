@@ -3,8 +3,8 @@ import ForceGraph3D from 'react-force-graph-3d';
 
 const NetworkGraph = () => {
   // Generate nodes and links
-  const numNodes = 100000;
-  const numLinks = 1400000;
+  const numNodes = 10000;
+  const numLinks = 140000;
   const nodes = [...Array(numNodes)].map((_, i) => ({ id: i }));
   const links = [...Array(numLinks)].map((_, i) => ({
     source: Math.floor(Math.random() * numNodes),
